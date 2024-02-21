@@ -1,4 +1,3 @@
-<h1>First release!!!</h1>
 <h2>features:</h2>
    <p>  "go to this week" button added, calculates week using 2024 term dates,</p>
    <p>  setup for settings and more features</p>
@@ -10,5 +9,3 @@
        <p> go to "manage extension" in Google</p>
        <p> turn on developer mode</p>
        <p> click load unpacked and select the folder </p>
-
-**Full Changelog**: https://github.com/GrumpyTurtl/WhsExtension/commits/beta
