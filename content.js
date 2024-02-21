@@ -3,14 +3,12 @@ button to goto current week, in time table app
 notification when there are new notices
 
 */
-//if (window.location.href.startsWith('https://portal.whs.school.nz/index.php/attendance/*')) {
-    const Target = document.querySelector("body > main > div > article > div.clearfix.text-xs-center.print-hide.mb-2 > div");
+//if (window.location.href.startsWith('https://portal.whs.school.nz/index.php/attendance/*')) { check if in atendence(cant be botherd to fix)
+const Target = document.querySelector("body > main > div > article > div.clearfix.text-xs-center.print-hide.mb-2 > div");
     if(Target){
         const span = document.createElement('span');
-        span.className = 'input-group-btn'
+        span.className = 'input-group-btn';
         
-        
-        console.log(getCurrentWeek());
 
         const link = document.createElement('a');
         link.href = 'https://portal.whs.school.nz/index.php/attendance/' + getCurrentWeek();
@@ -23,13 +21,11 @@ notification when there are new notices
     }else{
         console.error("you are stinky");
     }
-//}
 
 function getCurrentWeek() {
     const currentDate = new Date();
     const currentYear = currentDate.getFullYear();
-
-    // Define the start and end dates for each term
+    
     const terms = [
         { name: 'Term One', start: new Date(currentYear, 0, 31), end: new Date(currentYear, 3, 6) },
         { name: 'Term Two', start: new Date(currentYear, 3, 24), end: new Date(currentYear, 5, 30) },
@@ -46,7 +42,7 @@ function getCurrentWeek() {
     }
 
     if (!currentTerm) {
-        return "No current term";
+       console.error("No current term");
     }
 
     let elapsedDays;
