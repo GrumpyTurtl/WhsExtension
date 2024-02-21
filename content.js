@@ -3,7 +3,8 @@ button to goto current week, in time table app
 notification when there are new notices
 
 */
-//if (window.location.href.startsWith('https://portal.whs.school.nz/index.php/attendance/*')) { check if in atendence(cant be botherd to fix)
+if (window.location.href.startsWith('https://portal.whs.school.nz/index.php/attendance')) { //check if in atendence(cant be botherd to fix)
+
 const Target = document.querySelector("body > main > div > article > div.clearfix.text-xs-center.print-hide.mb-2 > div");
     if(Target){
         const span = document.createElement('span');
@@ -19,8 +20,9 @@ const Target = document.querySelector("body > main > div > article > div.clearfi
 
         Target.appendChild(span)
     }else{
-        console.error("you are stinky");
+        console.error("cant find elements");
     }
+}
 
 function getCurrentWeek() {
     const currentDate = new Date();
@@ -62,6 +64,3 @@ function getCurrentWeek() {
     const currentWeek = Math.ceil(elapsedDays / 7);
     return currentWeek;
 }
-
-
-
