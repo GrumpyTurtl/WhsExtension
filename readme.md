@@ -4,6 +4,8 @@ features:</h2>
    <p>  setup for settings and more features</p>
    <hr>
 
+<h1>note this already is on the website and i didnt realise</h1>
+
 <h2>How to install:</h2>
        <p> Download the "WhsExtension.zip file"</p>
        <p> Unzip</p>
