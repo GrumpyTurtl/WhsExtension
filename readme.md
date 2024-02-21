@@ -1,5 +1,5 @@
-<h1>This is a chrome extension that<h1>
-<h2>features:</h2>
+<h1>This is a chrome extension that
+features:</h2>
    <p>  "go to this week" button added, calculates week using 2024 term dates,</p>
    <p>  setup for settings and more features</p>
    <hr>
